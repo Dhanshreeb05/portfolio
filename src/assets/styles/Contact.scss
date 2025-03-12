@@ -23,6 +23,19 @@
   }
 }
 
+.contact-form .MuiInputBase-root {
+  color: #000;  /* Ensures text color is black */
+  background-color: white;  /* Ensures input background is white */
+}
+
+.contact-form input {
+  color: #000;  /* Makes sure input text is black */
+}
+
+.contact-form .MuiInputLabel-root {
+  color: #000;  /* Makes sure label text is visible */
+}
+
 label {
   font-size: 1.2rem;
   font-family: 'DomaineDispNar-Medium', sans-serif;

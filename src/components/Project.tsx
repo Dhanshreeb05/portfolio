@@ -1,5 +1,5 @@
 import React from "react";
-import mock10 from '../assets/images/mock10.png';
+import harvey from '../assets/images/chatbot.jpg';
 import '../assets/styles/Project.scss';
 
 function Project() {
@@ -8,8 +8,8 @@ function Project() {
         <h1>Personal Projects</h1>
         <div className="projects-grid">
             <div className="project">
-                <a href="https://github.com/ashrane111/AI-GovBot" target="_blank" rel="noreferrer"><img src={mock10} className="zoom" alt="thumbnail" width="100%"/></a>
-                <a href="https://github.com/ashrane111/AI-GovBot" target="_blank" rel="noreferrer"><h2>Filmate AI</h2></a>
+                <a href="https://github.com/ashrane111/AI-GovBot" target="_blank" rel="noreferrer"><img src={harvey} className="zoom" alt="thumbnail" width="70%"/></a>
+                <a href="https://github.com/ashrane111/AI-GovBot" target="_blank" rel="noreferrer"><h2>HARVEY</h2></a>
                 <p>Developed a chatbot for legal advice using RAG, Langchain, Airflow, MLFlow, Tensorflow.</p>
             </div>
         </div>
