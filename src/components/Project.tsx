@@ -1,5 +1,6 @@
 import React from "react";
 import harvey from '../assets/images/chatbot.jpg';
+import hermony from '../assets/images/Hermony.png';
 import '../assets/styles/Project.scss';
 
 function Project() {
@@ -11,6 +12,11 @@ function Project() {
                 <a href="https://github.com/ashrane111/AI-GovBot" target="_blank" rel="noreferrer"><img src={harvey} className="zoom" alt="thumbnail" width="70%"/></a>
                 <a href="https://github.com/ashrane111/AI-GovBot" target="_blank" rel="noreferrer"><h2>HARVEY</h2></a>
                 <p>Developed a chatbot for legal advice using RAG, Langchain, Airflow, MLFlow, Tensorflow.</p>
+            </div>
+            <div className="project">
+                <a href="https://github.com/ashrane111/AI-GovBot" target="_blank" rel="noreferrer"><img src={hermony} className="zoom" alt="thumbnail" width="70%"/></a>
+                <a href="https://github.com/ashrane111/AI-GovBot" target="_blank" rel="noreferrer"><h2>Hermony</h2></a>
+                <p>Developed a platform helps women in tech harmonize their professional and personal lives through smart scheduling, mentorship, and community support.</p>
             </div>
         </div>
     </div>
