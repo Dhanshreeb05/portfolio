@@ -4,8 +4,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import DescriptionIcon from '@mui/icons-material/Description';
 import '../assets/styles/Main.scss';
 import photo from '../assets/images/photo.jpg';
-import { Button } from "@mui/material";
-// import resume from '../assets/';
+import Resume from '../assets/RESUME_SDE.pdf';
 
 function Main() {
 
@@ -19,7 +18,7 @@ function Main() {
           <div className="social_icons">
             <a href="https://github.com/Dhanshreeb05" target="_blank" rel="noreferrer" title="Github"><GitHubIcon /></a>
             <a href="https://www.linkedin.com/in/dhanshree-baravkar/" target="_blank" rel="noreferrer" title="LinkedIn"><LinkedInIcon /></a>
-            <a href="https://drive.google.com/file/d/1dlkywIRnhYsRQi4BD-0r09UM-29vWlm3/view?usp=sharing" target="_blank" rel="noreferrer"
+            <a href={Resume} target="_blank" rel="noreferrer"
               title="View My Resume">
               <DescriptionIcon style={{ fontSize: 30}} />
             </a>
