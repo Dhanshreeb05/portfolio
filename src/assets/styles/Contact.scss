@@ -70,3 +70,56 @@ form {
 .contact-form .MuiInputLabel-root {
   color: #000 !important;
 }
+
+/* Success message styling - in line with your color scheme */
+.success-message {
+  background-color: #f7f7f7;
+  color: #050f0b;
+  padding: 12px 16px;
+  border-radius: 4px;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  border-left: 4px solid #5000ca;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.3s ease-in;
+}
+
+/* Optional success icon with updated color */
+.success-message::before {
+  content: '✓';
+  display: inline-block;
+  margin-right: 8px;
+  font-weight: bold;
+  color: #5000ca;
+}
+
+/* Animation for the message appearance (keep as is) */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animation for the message disappearance (keep as is) */
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
+
+.fade-out {
+  animation: fadeOut 0.5s ease-out forwards;
+}
