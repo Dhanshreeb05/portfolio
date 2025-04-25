@@ -24,23 +24,17 @@
 }
 
 .contact-form .MuiInputBase-root {
-  color: #000;  /* Ensures text color is black */
-  background-color: white;  /* Ensures input background is white */
+  color: #000 !important; 
+  background-color: white !important;  
 }
 
 .contact-form input {
-  color: #000;  /* Makes sure input text is black */
+  color: #000;  
 }
 
 .contact-form .MuiInputLabel-root {
-  color: #000;  /* Makes sure label text is visible */
+  color: #000;  
 }
-
-label {
-  font-size: 1.2rem;
-  font-family: 'DomaineDispNar-Medium', sans-serif;
-}
-
 .form-flex {
   display: flex;
   gap: 15px;
@@ -58,4 +52,13 @@ form {
 .body-form {
   width: 100% !important;
   margin-bottom: 15px !important;
+}
+
+.contact-form .MuiInputBase-input {
+  color: #000; 
+  background-color: white; 
+}
+
+.contact-form .MuiInputBase-input::placeholder {
+  color: rgba(0, 0, 0, 0.6); 
 }
