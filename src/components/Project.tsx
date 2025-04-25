@@ -31,7 +31,7 @@ function Project() {
                 <div className="project">
                     <a href="https://github.com/Dhanshreeb05/StockUp" target="_blank" rel="noreferrer"><img src={stockUp} className="zoom project-image" alt="thumbnail" width="70%" /></a>
                     <a href="https://github.com/Dhanshreeb05/StockUp" target="_blank" rel="noreferrer"><h2>StockUp</h2></a>
-                    <p>Architected a full-stack application using Angular, Node.js/Express, and MySQL with JWT authentication. Integrated real-time market data via WebSockets, implemented RESTful API endpoints for CRUD operations, and designed responsive UI with Angular Material components.</p>
+                    <p>Architected a full-stack application using Angular, Node.js/Express, and MySQL. Integrated real-time market data via WebSockets, implemented RESTful API endpoints for CRUD operations, and designed responsive UI with Angular Material components.</p>
                 </div>
             </div>
         </div>
