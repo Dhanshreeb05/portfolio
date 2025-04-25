@@ -71,6 +71,37 @@ form {
   color: #000 !important;
 }
 
+.dark-mode .contact-form .MuiInputBase-root {
+  background-color: #333 !important; // Dark gray background for input boxes
+  color: #fff !important; // White text color
+  border: 1px solid #555 !important; // Subtle border for input boxes
+}
+
+.dark-mode .contact-form .MuiInputBase-input {
+  background-color: #333 !important; // Match input background with root
+  color: #fff !important; // White text color
+}
+
+.dark-mode .contact-form .MuiInputBase-input::placeholder {
+  color: rgba(255, 255, 255, 0.6) !important; // Light gray placeholder color
+}
+
+.dark-mode .contact-form .MuiInputLabel-root {
+  color: #fff !important; // White label color
+}
+
+.dark-mode .contact-form .MuiOutlinedInput-notchedOutline {
+  border-color: #555 !important; // Subtle border color for outlined inputs
+}
+
+.dark-mode .contact-form button {
+  background-color: #5000ca !important; // Purple button background
+  color: #fff !important; // White button text
+}
+
+.dark-mode .contact-form button:hover {
+  background-color: #6a00e0 !important; // Slightly lighter purple on hover
+}
 /* Success message styling - in line with your color scheme */
 .success-message {
   background-color: #f7f7f7;
