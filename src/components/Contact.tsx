@@ -17,10 +17,9 @@ function Contact() {
 
   const form = useRef<HTMLFormElement>(null);
 
-  // Handle field changes with immediate validation - fixed event types
+  // Handle field changes with immediate validation
   const handleNameChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value;
-    console.log(value)
     setName(value);
     setNameError(value === '');
   };
@@ -31,9 +30,7 @@ function Contact() {
     setEmailError(value === '');
   };
 
-  // Corrected type for multiline TextField and ensuring value is properly set
   const handleMessageChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
-    console.log("Message value:", e.target.value); // Debug line to verify value capture
     const value = e.target.value;
     setMessage(value);
     setMessageError(value === '');
@@ -77,6 +74,32 @@ function Contact() {
     }
   };
 
+  
+  const inputStyles = {
+    color: '#000',
+    backgroundColor: 'white',
+    opacity: 1
+  };
+
+  
+  const textFieldSx = {
+    '& .MuiInputBase-input': {
+      color: '#000',
+      opacity: 1,
+    },
+    '& .MuiOutlinedInput-root': {
+      '& fieldset': {
+        borderColor: 'rgba(0, 0, 0, 0.23)',
+      },
+      '&:hover fieldset': {
+        borderColor: 'rgba(0, 0, 0, 0.5)',
+      },
+    },
+    '& .MuiFormLabel-root': {
+      color: 'rgba(0, 0, 0, 0.6)',
+    },
+  };
+
   return (
     <div id="contact">
       <div className="items-container">
@@ -103,8 +126,9 @@ function Contact() {
                 error={nameError}
                 helperText={nameError ? "Please enter your name" : ""}
                 fullWidth
+                sx={textFieldSx}
                 InputProps={{
-                  style: { color: '#000' }
+                  style: inputStyles
                 }}
               />
               <TextField
@@ -118,8 +142,9 @@ function Contact() {
                 error={emailError}
                 helperText={emailError ? "Please enter your email or phone number" : ""}
                 fullWidth
+                sx={textFieldSx}
                 InputProps={{
-                  style: { color: '#000' }
+                  style: inputStyles
                 }}
               />
             </div>
@@ -136,18 +161,16 @@ function Contact() {
               error={messageError}
               helperText={messageError ? "Please enter the message" : ""}
               fullWidth
-              InputProps={{
-                style: { color: '#000', opacity: 1 }
-              }}
               sx={{
+                ...textFieldSx,
                 '& .MuiInputBase-input': {
                   color: '#000',
                   opacity: 1,
-                  background: 'white'
+                  backgroundColor: 'white'
                 },
-                '& .MuiOutlinedInput-notchedOutline': {
-                  borderColor: 'rgba(0, 0, 0, 0.23)'
-                }
+              }}
+              InputProps={{
+                style: inputStyles
               }}
             />
             <Button 

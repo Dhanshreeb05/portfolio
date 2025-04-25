@@ -6,35 +6,41 @@
 
 .contact-form {
   padding-top: 20px;
-
-  button {
-    float: right;
-    background-color: white;
-    color: #050f0b;
-  }
-
-  button:hover {
-    background-color: #5000ca;
-    color: white;
-  }
-
-  fieldset {
-    background-color: white;
-  }
 }
+
+.contact-form button {
+  float: right;
+  background-color: white;
+  color: #050f0b;
+}
+
+.contact-form button:hover {
+  background-color: #5000ca;
+  color: white;
+}
+
 
 .contact-form .MuiInputBase-root {
   color: #000 !important; 
   background-color: white !important;  
+  opacity: 1 !important;
 }
 
-.contact-form input {
-  color: #000;  
+
+.contact-form .MuiInputBase-input {
+  color: #000 !important; 
+  background-color: white !important;
+  opacity: 1 !important;
 }
 
-.contact-form .MuiInputLabel-root {
-  color: #000;  
+
+.contact-form textarea.MuiInputBase-input {
+  color: #000 !important;
+  background-color: white !important;
+  opacity: 1 !important;
 }
+
+
 .form-flex {
   display: flex;
   gap: 15px;
@@ -54,11 +60,13 @@ form {
   margin-bottom: 15px !important;
 }
 
-.contact-form .MuiInputBase-input {
-  color: #000; 
-  background-color: white; 
-}
 
 .contact-form .MuiInputBase-input::placeholder {
-  color: rgba(0, 0, 0, 0.6); 
+  color: rgba(0, 0, 0, 0.6) !important; 
+  opacity: 1 !important;
+}
+
+
+.contact-form .MuiInputLabel-root {
+  color: #000 !important;
 }
