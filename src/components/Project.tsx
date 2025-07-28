@@ -3,6 +3,7 @@ import harvey from '../assets/images/chatbot.jpg';
 import hermony from '../assets/images/Hermony.png';
 import imgCraft from '../assets/images/imageCraft.jpg';
 import stockUp from '../assets/images/StockUp.jpg';
+import insure from '../assets/images/insure.jpg';
 import '../assets/styles/Project.scss';
 
 function Project() {
@@ -14,6 +15,12 @@ function Project() {
                     <a href="https://github.com/ashrane111/AI-GovBot" target="_blank" rel="noreferrer"><img src={harvey} className="zoom project-image" alt="thumbnail" width="70%" /></a>
                     <a href="https://github.com/ashrane111/AI-GovBot" target="_blank" rel="noreferrer"><h2>HARVEY</h2></a>
                     <p>Developed a legal advisory chatbot using RAG architecture with FAISS for vector storage, LangChain for document chunking, Airflow for pipeline orchestration, and MLFlow for model tracking. Implemented context-aware responses with 90% accuracy on legal queries.</p>
+                </div>
+
+                <div className="project">
+                    <a href="https://github.com/hrigvedk/AiAgents"><img src={insure} className="zoom project-image" alt="thumbnail" width="70%" /></a>
+                    <a href="https://github.com/hrigvedk/AiAgents"><h2>inSure.AI: Agentic Health Insurance Navigator</h2></a>
+                    <p>Architected a multi-agent healthcare AI system using Google Gemini 2.0 Flash and Agent Development Kit, integrating FastAPI backend with Firebase Authentication and Stedi Healthcare API to deliver real-time insurance verification and medical cost prediction </p>
                 </div>
 
                 <div className="project">
